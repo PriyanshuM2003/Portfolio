@@ -84,7 +84,7 @@ export default function PortfolioCom() {
                                         <a className='icon-link' href="https://github.com/PriyanshuM2003/APImaster.git" target='_blank' rel='noopener noreferrer'>
                                             <i className='fab fa-github'></i>
                                         </a>
-                                        <a className='icon-link' href="https://priyanshum2003.github.io/APImaster/project3.html" target='_blank' rel='noopener noreferrer'>
+                                        <a className='icon-link' href="https://priyanshum2003.github.io/APImaster/apimaster" target='_blank' rel='noopener noreferrer'>
                                             <i className='fa fa-podcast'></i>
                                         </a>
                                     </div>
