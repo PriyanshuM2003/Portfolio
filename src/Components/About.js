@@ -21,7 +21,7 @@ function About() {
                         <div className='social-media'>
                             <ul className='nav-list'>
                                 <li>
-                                    <a className='icon-link' target="_blank" href="https://drive.google.com/file/d/1DlqOcdKtR-fZPBoZJWud0c-R6l9ank7f/view?usp=sharing" rel='noopener noreferrer'>
+                                    <a className='icon-link' target="_blank" href="https://drive.google.com/file/d/16zs4zn1Yxy-DTDL44VTrT1bRH3h_HQXB/view?usp=sharing" rel='noopener noreferrer'>
                                         <i className='fa fa-file'></i>
                                     </a>
                                 </li>
