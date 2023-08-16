@@ -11,9 +11,9 @@ export default function Experience() {
                     </div>
                     <div className='timeline' data-aos='fade-down' data-aos-delay='300'>
                         <ul>
-                            <li className='date' data-date='May/23 - Present'>
+                            <li className='date' data-date='May/23 - Jul/23'>
                                 <h1>ButterPaper</h1>
-                                <p>Currently doing internship at ButterPaper as a Backend developer.</p>
+                                <p>Intern at ButterPaper as a Full Stack Developer.</p>
                             </li>
                         </ul>
                     </div>

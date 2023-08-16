@@ -31,7 +31,7 @@ export default function PortfolioCom() {
                                     <h1>Portfolio</h1>
                                     <div className="card-social-media">
                                         <a className='icon-link' href="https://github.com/PriyanshuM2003/Portfolio.git" target='_blank' rel='noopener noreferrer'>
-                                            <i className='fa fa-github'></i>
+                                            <i className='fab fa-github'></i>
                                         </a>
                                     </div>
                                     <div className='using'>
