@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -7,17 +7,9 @@ export default function Navbar() {
         setIsOpen(prevState => !prevState);
     };
 
-    useEffect(() => {
-        const navToggle = () => {
-            setIsOpen(window.scrollY <= -1);
-        };
-
-        window.addEventListener('scroll', navToggle);
-
-        return () => {
-            window.removeEventListener('scroll', navToggle);
-        };
-    }, []);
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
 
     return (
         <>
@@ -26,7 +18,7 @@ export default function Navbar() {
                 <div className='bar'></div>
                 <div className='bar half end'></div>
             </div>
-            <nav className={`top-nav ${isOpen ? "open" : ""}`}>
+            <nav className={`top-nav ${isOpen ? "open" : ""}`} onClick={closeMenu}>
                 <ul className="nav-list">
                     {[
                         { id: "about", label: "About" },
