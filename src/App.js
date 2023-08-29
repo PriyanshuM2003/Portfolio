@@ -5,12 +5,10 @@ import Home from './Components/Home';
 import About from './Components/About';
 import Services from './Components/Services';
 import Skills from './Components/Skills';
-import PortfolioCom from './Components/PortfolioCom';
 import Experience from './Components/Experience';
 import Contact from './Components/Contact';
 import Copyright from './Components/Copyright';
-
-import { BrowserRouter as Router } from "react-router-dom";
+import Projects from './Components/Projects';
 
 AOS.init({
   easing: "ease",
@@ -23,17 +21,15 @@ function App() {
 
   return (
     <>
-      <Router>
-        <Navbar />
-        <Home />
-        <About />
-        <Services />
-        <Skills />
-        <PortfolioCom />
-        <Experience />
-        <Contact />
-        <Copyright />
-      </Router>
+      <Navbar />
+      <Home />
+      <About />
+      <Services />
+      <Skills />
+      <Projects />
+      <Experience />
+      <Contact />
+      <Copyright />
     </>
   );
 }

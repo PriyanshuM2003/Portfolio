@@ -10,11 +10,8 @@ export default function Contact() {
                         <h6>Let's work together</h6>
                     </div>
                     <div className='contact-details'>
-                        <p>
-                            <h1>Phone No.:- +91-9315061543</h1>
-                            <br />
-                            <h1>Email I'd:- priyanshumishra332@gmail.com</h1>
-                        </p>
+                        <h1>Phone No.:- +91-9315061543</h1>
+                        <h1>Email I'd:- priyanshumishra332@gmail.com</h1>
                     </div>
                 </div>
             </section>

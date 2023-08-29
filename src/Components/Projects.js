@@ -1,18 +1,34 @@
 import React, { useState } from 'react'
 
-import TabContent from './ProjectTab/TabContent';
-import TabItem from './ProjectTab/TabItem';
-
-export default function PortfolioCom() {
+export default function Projects() {
 
     const [activeTab, setActiveTab] = useState("tab1");
 
+    const TabItem = ({ id, title }) => {
+        const handleClick = () => {
+            setActiveTab(id);
+        };
+        return (
+            <li onClick={handleClick} className={activeTab === id ? "active" : ""}>
+                {title}
+            </li>
+        );
+    };
+
+    const TabContent = ({ id, children }) => {
+        return (
+            activeTab === id ? <div className="TabContent">
+                {children}
+            </div> : null
+        );
+    };
+
     return (
         <>
-            <section className='portfolio' id='portfolio'>
+            <section className='projects' id='projects'>
                 <div className='container'>
-                    <div className='section-heading' id='portfolio-item'>
-                        <h1>Portfolio</h1>
+                    <div className='section-heading' id='projects-item'>
+                        <h1>Projects</h1>
                         <h6>View Some of my recent works</h6>
                     </div>
 

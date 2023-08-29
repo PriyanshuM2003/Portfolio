@@ -486,6 +486,10 @@ svg circle {
   animation: bar_6 2s linear forwards;
 }
 
+.ring:nth-child(7) svg circle {
+  animation: bar_7 2s linear forwards;
+}
+
 .ring-two:nth-child(1) svg circle {
   animation: bar_7 2s linear forwards;
 }
@@ -601,7 +605,7 @@ svg circle {
   }
 
   100% {
-    stroke-dashoffset: calc(630px - (630px * 70) / 100);
+    stroke-dashoffset: calc(630px - (630px * 80) / 100);
   }
 }
 
@@ -611,7 +615,7 @@ svg circle {
   }
 
   100% {
-    stroke-dashoffset: calc(630px - (630px * 90) / 100);
+    stroke-dashoffset: calc(630px - (630px * 70) / 100);
   }
 }
 
@@ -641,7 +645,7 @@ svg circle {
   }
 
   100% {
-    stroke-dashoffset: calc(630px - (630px * 80) / 100);
+    stroke-dashoffset: calc(630px - (630px * 90) / 100);
   }
 }
 
@@ -651,7 +655,7 @@ svg circle {
   }
 
   100% {
-    stroke-dashoffset: calc(630px - (630px * 70) / 100);
+    stroke-dashoffset: calc(630px - (630px * 80) / 100);
   }
 }
 
@@ -661,11 +665,21 @@ svg circle {
   }
 
   100% {
-    stroke-dashoffset: calc(630px - (630px * 60) / 100);
+    stroke-dashoffset: calc(630px - (630px * 70) / 100);
   }
 }
 
 @keyframes bar_13 {
+  0% {
+    stroke-dashoffset: 630px;
+  }
+
+  100% {
+    stroke-dashoffset: calc(630px - (630px * 60) / 100);
+  }
+}
+
+@keyframes bar_14 {
   0% {
     stroke-dashoffset: 630px;
   }
@@ -677,9 +691,9 @@ svg circle {
 
 /** Skills */
 
-/** Portfolio */
+/** projects */
 
-#portfolio-item {
+#projects-item {
   margin-bottom: 3rem;
 }
 
@@ -830,7 +844,7 @@ svg circle {
 
 /** Tabs  */
 
-/** Portfolio */
+/** projects */
 
 /** Timeline */
 
@@ -901,10 +915,8 @@ svg circle {
 }
 
 .contact-details {
-  display: flex;
-  justify-content: center;
   text-align: center;
-  align-items: center;
+  font-size: 2rem;
 }
 
 /** Contact */
@@ -1014,11 +1026,11 @@ body {
   }
 
   .ring {
-    margin: 0 5rem;
+    margin: 0 auto;
   }
 
   .ring-two {
-    margin: 0 5rem;
+    margin: 0 auto;
   }
 
 
@@ -1048,10 +1060,6 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  body {
-    background: url(../public/images/sitebg2.jpg) no-repeat center fixed;
-    background-size: cover;
-  }
 
   .menu-toggler {
     top: 2rem;
@@ -1081,11 +1089,11 @@ body {
   }
 
   .ring {
-    margin: 0 14rem;
+    margin: 0 auto;
   }
 
   .ring-two {
-    margin: 0 14rem;
+    margin: 0 auto;
   }
 
   .tab {
@@ -1104,8 +1112,8 @@ body {
     font-size: 1.4rem;
   }
 
-  form {
-    width: 100%;
+  .contact-details h1 {
+    font-size: 4rem;
   }
 
   .up {
@@ -1114,13 +1122,6 @@ body {
 }
 
 @media screen and (max-width: 450px) {
-  body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: url(../public/images/sitebg2.jpg) no-repeat center fixed;
-    background-size: cover;
-  }
 
   .menu-toggler {
     top: 2rem;
@@ -1162,11 +1163,11 @@ body {
   }
 
   .ring {
-    margin: 0 7.5rem;
+    margin: 0 auto;
   }
 
   .ring-two {
-    margin: 0 7.5rem;
+    margin: 0 auto;
   }
 
   .tab {
@@ -1174,7 +1175,8 @@ body {
   }
 
   .timeline ul {
-    margin: 0px 6rem;
+    margin: 0px 4rem;
+    width: fit-content;
   }
 
   .timeline p {
@@ -1185,8 +1187,8 @@ body {
     font-size: 1.4rem;
   }
 
-  form {
-    width: 100%;
+  .contact-details h1 {
+    font-size: 2rem;
   }
 
   .up {
