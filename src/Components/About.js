@@ -37,7 +37,7 @@ function About() {
                                 </li>
                                 <li>
                                     <a className='icon-link' href="https://twitter.com/PRIYANSHUm2003?t=tOzbEIhaRUPfDyVAKrjt6Q&s=09" target='_blank' rel='noopener noreferrer'>
-                                        <i className='fab fa-twitter'></i>
+                                        <i className='fa-brands fa-x-twitter'></i>
                                     </a>
                                 </li>
                                 <li>
