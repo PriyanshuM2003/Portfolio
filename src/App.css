@@ -1139,7 +1139,7 @@ body {
   }
 
   #prog-skill {
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)) !important;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)) !important;
   }
 
   .ring {
@@ -1163,9 +1163,13 @@ body {
     width: auto;
   }
 
+  .timeline{
+    margin: 0 0 0 8rem;
+  }
+
   .timeline ul {
     margin: 0px 5rem;
-    width: fit-content;
+    width: 78%;
   }
 
   .timeline p {
