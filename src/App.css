@@ -100,7 +100,6 @@ li {
 .top-nav.open {
   top: 0;
   border-radius: initial;
-  pointer-events: auto;
 }
 
 .menu-toggler {
@@ -119,7 +118,6 @@ li {
 
 .menu-toggler.open {
   transform: rotate(-45deg) translateX(-0.8rem);
-
 }
 
 .bar {
@@ -1101,6 +1099,10 @@ body {
     right: 2rem;
   }
 
+  .intro {
+    animation: none !important;
+  }
+
   .intro h1 {
     font-size: 8rem;
   }
@@ -1339,6 +1341,5 @@ body {
     right: 2rem;
   }
 }
-
 
 /** Responsive */

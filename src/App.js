@@ -1,7 +1,7 @@
 import './App.css';
-// import React, { useEffect } from 'react';
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import About from './Components/About';
@@ -14,9 +14,9 @@ import Skills from './Components/Skills';
 
 function App() {
 
-  // useEffect(() => {
-  //   AOS.init();
-  // }, []);
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <>
