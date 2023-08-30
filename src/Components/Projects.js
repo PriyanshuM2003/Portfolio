@@ -42,7 +42,7 @@ export default function Projects() {
                     <div className='Content'>
                         <div className="outlet">
                             <TabContent id="tab1" activeTab={activeTab}>
-                                <div className="card">
+                                <div className="card" data-aos="flip-down" data-aos-delay="300">
                                     <img src="./images/Picture2.png" alt="" />
                                     <h1>Portfolio</h1>
                                     <div className="card-social-media">
@@ -56,7 +56,7 @@ export default function Projects() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="card">
+                                <div className="card" data-aos="flip-down" data-aos-delay="300">
                                     <img src="./images/Picture16.png" alt="" />
                                     <h1>E-commerce</h1>
                                     <div className="card-social-media">
@@ -79,7 +79,7 @@ export default function Projects() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="card">
+                                <div className="card" data-aos="flip-down" data-aos-delay="300">
                                     <img src="./images/Picture3.png" alt="" />
                                     <h1>Messenger XD</h1>
                                     <div className="card-social-media">
@@ -99,7 +99,7 @@ export default function Projects() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="card">
+                                <div className="card" data-aos="flip-down" data-aos-delay="300">
                                     <img src="./images/Picture5.jpg" alt="" />
                                     <h1>Daily-Dose News</h1>
                                     <div className="card-social-media">
@@ -119,7 +119,7 @@ export default function Projects() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="card">
+                                <div className="card" data-aos="flip-down" data-aos-delay="300">
                                     <img src="./images/Picture14.jpg" alt="" />
                                     <h1>API Master</h1>
                                     <div className="card-social-media">
@@ -142,7 +142,7 @@ export default function Projects() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="card">
+                                <div className="card" data-aos="flip-down" data-aos-delay="300">
                                     <img src="./images/Picture4.jpg" alt="" />
                                     <h1>Super Mario Lite</h1>
                                     <div className="card-social-media">
@@ -167,7 +167,7 @@ export default function Projects() {
                                 </div>
                             </TabContent>
                             <TabContent id="tab2" activeTab={activeTab}>
-                                <div className="card">
+                                <div className="card" data-aos="flip-down" data-aos-delay="300">
                                     <img src="./images/Picture11.jpg" alt="" />
                                     <h1>Voting System</h1>
                                     <div className="card-social-media">
@@ -181,7 +181,7 @@ export default function Projects() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="card">
+                                <div className="card" data-aos="flip-down" data-aos-delay="300">
                                     <img src="./images/Picture15.jpg" alt="" />
                                     <h1>C.V. Tracker</h1>
                                     <div className="card-social-media">
@@ -195,7 +195,7 @@ export default function Projects() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="card">
+                                <div className="card" data-aos="flip-down" data-aos-delay="300">
                                     <img src="./images/Picture8.jpg" alt="" />
                                     <h1>Snake Game</h1>
                                     <div className="card-social-media">
@@ -209,7 +209,7 @@ export default function Projects() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="card">
+                                <div className="card" data-aos="flip-down" data-aos-delay="300">
                                     <img src="./images/Picture6.jpg" alt="" />
                                     <h1>QR Code Generator</h1>
                                     <div className="card-social-media">
@@ -223,7 +223,7 @@ export default function Projects() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="card">
+                                <div className="card" data-aos="flip-down" data-aos-delay="300">
                                     <img src="./images/Picture7.png" alt="" />
                                     <h1>Word Cloud Generator</h1>
                                     <div className="card-social-media">
@@ -237,7 +237,7 @@ export default function Projects() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="card">
+                                <div className="card" data-aos="flip-down" data-aos-delay="300">
                                     <img src="./images/Picture12.jpg" alt="" />
                                     <h1>R.P.S</h1>
                                     <div className="card-social-media">
@@ -253,7 +253,7 @@ export default function Projects() {
                                 </div>
                             </TabContent>
                             <TabContent id="tab3" activeTab={activeTab}>
-                                {/* <div className="card">
+                                {/* <div className="card" data-aos="flip-down" data-aos-delay="300">
                                     <img src="./images/Picture16.jpg" alt="" />
                                     <h1>E-commerce</h1>
                                     <div className="card-social-media">

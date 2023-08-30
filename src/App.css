@@ -59,7 +59,7 @@
 .top-nav {
   width: 100%;
   height: 100vh;
-  position: fixed;
+  position: absolute;
   top: -100vh;
   z-index: 50;
   background-color: #16162d;
@@ -118,7 +118,6 @@ li {
 }
 
 .menu-toggler.open {
-  /* transform: rotate(-45deg); */
   transform: rotate(-45deg) translateX(-0.8rem);
 
 }
@@ -154,13 +153,12 @@ li {
 }
 
 .intro {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  z-index: 1;
 }
 
 .intro h1 {
@@ -1310,6 +1308,10 @@ body {
 
   .tab {
     width: auto;
+  }
+
+  .tab li.active {
+    padding: 2.2rem;
   }
 
   .timeline {

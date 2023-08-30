@@ -1,6 +1,11 @@
 import React from "react";
+import { useInView } from 'react-intersection-observer';
 
 export default function Skills() {
+
+    const { ref: aniRef, inView: aniTrig } = useInView();
+    const { ref: aniRef2, inView: aniTrig2 } = useInView();
+
 
     return (
         <>
@@ -15,8 +20,8 @@ export default function Skills() {
                         <h1>Core Skills</h1>
                     </div>
 
-                    <div className='prog-skill' id='prog-skill'>
-                        <div className="ring">
+                    <div className='prog-skill' id='prog-skill' ref={aniRef} data-aos="zoom-in-up" data-aos-delay="300">
+                        <div className={`${aniTrig ? 'ring' : ''}`}>
                             <h1>HTML, CSS & JS <br /> 90% </h1>
                             <svg>
                                 <defs>
@@ -28,37 +33,37 @@ export default function Skills() {
                                 <circle cx='50%' cy='50%' r="50%"></circle>
                             </svg>
                         </div>
-                        <div className="ring">
+                        <div className={`${aniTrig ? 'ring' : ''}`}>
                             <svg>
                                 <circle cx='50%' cy='50%' r="50%"></circle>
                             </svg>
                             <h1>React.js <br /> 90% </h1>
                         </div>
-                        <div className="ring">
+                        <div className={`${aniTrig ? 'ring' : ''}`}>
                             <svg>
                                 <circle cx='50%' cy='50%' r="50%"></circle>
                             </svg>
                             <h1>Next.js<br />90%</h1>
                         </div>
-                        <div className="ring">
+                        <div className={`${aniTrig ? 'ring' : ''}`}>
                             <svg>
                                 <circle cx='50%' cy='50%' r="50%"></circle>
                             </svg>
                             <h1>Express.js<br />80%</h1>
                         </div>
-                        <div className="ring">
+                        <div className={`${aniTrig ? 'ring' : ''}`}>
                             <svg>
                                 <circle cx='50%' cy='50%' r="50%"></circle>
                             </svg>
                             <h1>Mongo DB<br />80%</h1>
                         </div>
-                        <div className="ring">
+                        <div className={`${aniTrig ? 'ring' : ''}`}>
                             <svg>
                                 <circle cx='50%' cy='50%' r="50%"></circle>
                             </svg>
                             <h1>PostgreSQL<br />80%</h1>
                         </div>
-                        <div className="ring">
+                        <div className={`${aniTrig ? 'ring' : ''}`}>
                             <svg>
                                 <circle cx='50%' cy='50%' r="50%"></circle>
                             </svg>
@@ -69,44 +74,44 @@ export default function Skills() {
                     <div className='skill-heading'>
                         <h1>Additonal Skills</h1>
                     </div>
-                    <div className='prog-skill' id='prog-skill'>
-                        <div className="ring-two">
+                    <div className='prog-skill' id='prog-skill' ref={aniRef2} data-aos="zoom-in-up" data-aos-delay="300">
+                        <div className={`${aniTrig2 ? 'ring-two' : ''}`}>
                             <svg>
                                 <circle cx='50%' cy='50%' r="50%"></circle>
                             </svg>
                             <h1>Tailwind CSS<br />90%</h1>
                         </div>
-                        <div className="ring-two">
+                        <div className={`${aniTrig2 ? 'ring-two' : ''}`}>
                             <svg>
                                 <circle cx='50%' cy='50%' r="50%"></circle>
                             </svg>
                             <h1>BootStrap<br />90%</h1>
                         </div>
-                        <div className="ring-two">
+                        <div className={`${aniTrig2 ? 'ring-two' : ''}`}>
                             <svg>
                                 <circle cx='50%' cy='50%' r="50%"></circle>
                             </svg>
                             <h1>Material UI & Chakra UI<br />90%</h1>
                         </div>
-                        <div className="ring-two">
+                        <div className={`${aniTrig2 ? 'ring-two' : ''}`}>
                             <svg>
                                 <circle cx='50%' cy='50%' r="50%"></circle>
                             </svg>
                             <h1>Git/GitHub<br />80%</h1>
                         </div>
-                        <div className="ring-two">
+                        <div className={`${aniTrig2 ? 'ring-two' : ''}`}>
                             <svg>
                                 <circle cx='50%' cy='50%' r="50%"></circle>
                             </svg>
                             <h1>C++<br />70%</h1>
                         </div>
-                        <div className="ring-two">
+                        <div className={`${aniTrig2 ? 'ring-two' : ''}`}>
                             <svg>
                                 <circle cx='50%' cy='50%' r="50%"></circle>
                             </svg>
                             <h1>Data Structures & Algorithms<br />60%</h1>
                         </div>
-                        <div className="ring-two">
+                        <div className={`${aniTrig2 ? 'ring-two' : ''}`}>
                             <svg>
                                 <circle cx='50%' cy='50%' r="50%"></circle>
                             </svg>
@@ -116,17 +121,5 @@ export default function Skills() {
                 </div>
             </section>
         </>
-    );
+    )
 }
-
-
-
-
-
-
-
-
-
-
-
-

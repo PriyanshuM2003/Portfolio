@@ -4,7 +4,7 @@ export default function Contact() {
     return (
         <>
             <section className='contact' id='contact'>
-                <div className='container'>
+                <div className='container' data-aos="fade-up" data-aos-delay="300">
                     <div className='section-heading'>
                         <h1>Contact</h1>
                         <h6>Let's work together</h6>
