@@ -159,10 +159,7 @@ export default function Projects() {
                   </div>
                   <div className="using">
                     <div className="using-name">
-                      <h6>React js</h6>
-                    </div>
-                    <div className="using-name">
-                      <h6>News API</h6>
+                      <h6>MERN Stack</h6>
                     </div>
                     <div className="using-name">
                       <h6>Bootstrap</h6>
