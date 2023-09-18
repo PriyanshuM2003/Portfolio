@@ -120,7 +120,7 @@ export default function Projects() {
                     </a>
                     <a
                       className="icon-link"
-                      href="https://messengerxd.onrender.com/"
+                      href="https://messengerxd.vercel.app"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
