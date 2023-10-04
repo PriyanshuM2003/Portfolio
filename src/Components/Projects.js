@@ -68,7 +68,7 @@ const projectData = {
     },
     {
       title: "Weather App",
-      imgSrc: "./images/Picture17.jpg",
+      imgSrc: "./images/Picture17.png",
       githubUrl: "https://github.com/PriyanshuM2003/WeatherApp.git",
       liveUrl: "",
       technologies: ["Python"],
@@ -89,7 +89,7 @@ const projectData = {
     },
     {
       title: "Rock Paper Scissors",
-      imgSrc: "./images/Picture12.jpg",
+      imgSrc: "./images/Picture12.png",
       githubUrl: "https://github.com/PriyanshuM2003/PythonGames.git",
       liveUrl: "",
       technologies: ["Python"],
