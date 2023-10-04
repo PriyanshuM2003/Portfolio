@@ -1,389 +1,184 @@
 import React, { useState } from "react";
 
+const tabData = [
+  { id: "tab1", title: "Full Stack Development" },
+  { id: "tab2", title: "Python" },
+  { id: "tab3", title: "Other" },
+];
+
+const projectData = {
+  tab1: [
+    {
+      title: "Portfolio",
+      imgSrc: "./images/Picture2.png",
+      githubUrl: "https://github.com/PriyanshuM2003/Portfolio.git",
+      liveUrl: "",
+      technologies: ["React js"],
+    },
+    {
+      title: "E-commerce",
+      imgSrc: "./images/Picture16.png",
+      githubUrl: "https://github.com/PriyanshuM2003/OtakuStore.git",
+      liveUrl: "https://otakustore.vercel.app/",
+      technologies: ["React.js", "Next.js", "Razorpay"],
+    },
+    {
+      title: "Messenger XD",
+      imgSrc: "./images/Picture3.png",
+      githubUrl: "https://github.com/PriyanshuM2003/MessengerXD-chat-app.git",
+      liveUrl: "https://messengerxd.vercel.app/",
+      technologies: ["MERN Stack", "Chakra UI"],
+    },
+    {
+      title: "airArticle",
+      imgSrc: "./images/Picture5.png",
+      githubUrl: "https://github.com/PriyanshuM2003/airArticle.git",
+      liveUrl: "https://airarticle.vercel.app/",
+      technologies: ["MERN Stack", "Bootstrap"],
+    },
+    {
+      title: "API Master",
+      imgSrc: "./images/Picture14.jpg",
+      githubUrl: "https://github.com/PriyanshuM2003/APImaster.git",
+      liveUrl: "https://priyanshum2003.github.io/APImaster/apimaster",
+      technologies: ["HTML", "JS", "Bootstrap"],
+    },
+    {
+      title: "Super Mario Lite",
+      imgSrc: "./images/Picture4.jpg",
+      githubUrl: "https://github.com/PriyanshuM2003/SuperMarioLite.git",
+      liveUrl: "https://priyanshum2003.github.io/SuperMarioLite/",
+      technologies: ["HTML", "CSS", "JS"],
+    },
+  ],
+  tab2: [
+    {
+      title: "Voting System",
+      imgSrc: "./images/Picture11.jpg",
+      githubUrl: "https://github.com/PriyanshuM2003/VotingSystem.git",
+      liveUrl: "",
+      technologies: ["Python"],
+    },
+    {
+      title: "C.V. Tracker",
+      imgSrc: "./images/Picture15.jpg",
+      githubUrl: "https://github.com/PriyanshuM2003/CoronaVirusLiveTracker.git",
+      liveUrl: "",
+      technologies: ["Python"],
+    },
+    {
+      title: "Weather App",
+      imgSrc: "./images/Picture17.jpg",
+      githubUrl: "https://github.com/PriyanshuM2003/WeatherApp.git",
+      liveUrl: "",
+      technologies: ["Python"],
+    },
+    {
+      title: "Snake Game",
+      imgSrc: "./images/Picture8.jpg",
+      githubUrl: "https://github.com/PriyanshuM2003/PythonGames.git",
+      liveUrl: "",
+      technologies: ["Python"],
+    },
+    {
+      title: "Word Cloud Generator",
+      imgSrc: "./images/Picture7.png",
+      githubUrl: "https://github.com/PriyanshuM2003/WordCloud.git",
+      liveUrl: "",
+      technologies: ["Python"],
+    },
+    {
+      title: "Rock Paper Scissors",
+      imgSrc: "./images/Picture12.jpg",
+      githubUrl: "https://github.com/PriyanshuM2003/PythonGames.git",
+      liveUrl: "",
+      technologies: ["Python"],
+    },
+  ],
+  tab3: [],
+};
+
 export default function Projects() {
   const [activeTab, setActiveTab] = useState("tab1");
 
-  const TabItem = ({ id, title }) => {
-    const handleClick = () => {
-      setActiveTab(id);
-    };
-    return (
-      <li onClick={handleClick} className={activeTab === id ? "active" : ""}>
-        {title}
-      </li>
-    );
-  };
-
-  const TabContent = ({ id, children }) => {
-    return activeTab === id ? (
-      <div className="TabContent">{children}</div>
-    ) : null;
+  const handleTabClick = (id) => {
+    setActiveTab(id);
   };
 
   return (
-    <>
-      <section className="projects" id="projects">
-        <div className="container">
-          <div className="section-heading" id="projects-item">
-            <h1>Projects</h1>
-            <h6>View Some of my recent works</h6>
-          </div>
+    <section className="projects" id="projects">
+      <div className="container">
+        <div className="section-heading" id="projects-item">
+          <h1>Projects</h1>
+          <h6>View Some of my recent works</h6>
+        </div>
 
-          <div className="Tabs">
-            <div className="tab">
+        <div className="Tabs">
+          <div className="tab">
+            {tabData.map((tab) => (
               <TabItem
-                title="Full Stack Devlopment"
-                id="tab1"
+                key={tab.id}
+                id={tab.id}
+                title={tab.title}
                 activeTab={activeTab}
-                setActiveTab={setActiveTab}
+                onClick={handleTabClick}
               />
-              <TabItem
-                title="Python"
-                id="tab2"
-                activeTab={activeTab}
-                setActiveTab={setActiveTab}
-              />
-              <TabItem
-                title="Other"
-                id="tab3"
-                activeTab={activeTab}
-                setActiveTab={setActiveTab}
-              />
-            </div>
-          </div>
-          <div className="Content">
-            <div className="outlet">
-              <TabContent id="tab1" activeTab={activeTab}>
-                <div className="card" data-aos="flip-down" data-aos-delay="300">
-                  <img src="./images/Picture2.png" alt="" />
-                  <h1>Portfolio</h1>
-                  <div className="card-social-media">
-                    <a
-                      className="icon-link"
-                      href="https://github.com/PriyanshuM2003/Portfolio.git"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i className="fab fa-github"></i>
-                    </a>
-                  </div>
-                  <div className="using">
-                    <div className="using-name">
-                      <h6>React js</h6>
-                    </div>
-                  </div>
-                </div>
-                <div className="card" data-aos="flip-down" data-aos-delay="300">
-                  <img src="./images/Picture16.png" alt="" />
-                  <h1>E-commerce</h1>
-                  <div className="card-social-media">
-                    <a
-                      className="icon-link"
-                      href="https://github.com/PriyanshuM2003/OtakuStore.git"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i className="fab fa-github"></i>
-                    </a>
-                    <a
-                      className="icon-link"
-                      href="https://otakustore.vercel.app/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i className="fa fa-podcast"></i>
-                    </a>
-                  </div>
-                  <div className="using">
-                    <div className="using-name">
-                      <h6>Next js</h6>
-                    </div>
-                    <div className="using-name">
-                      <h6>React js</h6>
-                    </div>
-                    <div className="using-name">
-                      <h6>Razorpay</h6>
-                    </div>
-                  </div>
-                </div>
-                <div className="card" data-aos="flip-down" data-aos-delay="300">
-                  <img src="./images/Picture3.png" alt="" />
-                  <h1>Messenger XD</h1>
-                  <div className="card-social-media">
-                    <a
-                      className="icon-link"
-                      href="https://github.com/PriyanshuM2003/MessengerXD-chat-app.git"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i className="fab fa-github"></i>
-                    </a>
-                    <a
-                      className="icon-link"
-                      href="https://messengerxd.vercel.app"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i className="fa fa-podcast"></i>
-                    </a>
-                  </div>
-                  <div className="using">
-                    <div className="using-name">
-                      <h6>MERN</h6>
-                    </div>
-                    <div className="using-name">
-                      <h6>Chakra UI</h6>
-                    </div>
-                  </div>
-                </div>
-                <div className="card" data-aos="flip-down" data-aos-delay="300">
-                  <img src="./images/Picture5.png" alt="" />
-                  <h1>airArticle</h1>
-                  <div className="card-social-media">
-                    <a
-                      className="icon-link"
-                      href="https://github.com/PriyanshuM2003/airArticle.git"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i className="fab fa-github"></i>
-                    </a>
-                    <a
-                      className="icon-link"
-                      href="https://airarticle.vercel.app"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i className="fa fa-podcast"></i>
-                    </a>
-                  </div>
-                  <div className="using">
-                    <div className="using-name">
-                      <h6>MERN Stack</h6>
-                    </div>
-                    <div className="using-name">
-                      <h6>Bootstrap</h6>
-                    </div>
-                  </div>
-                </div>
-                <div className="card" data-aos="flip-down" data-aos-delay="300">
-                  <img src="./images/Picture14.jpg" alt="" />
-                  <h1>API Master</h1>
-                  <div className="card-social-media">
-                    <a
-                      className="icon-link"
-                      href="https://github.com/PriyanshuM2003/APImaster.git"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i className="fab fa-github"></i>
-                    </a>
-                    <a
-                      className="icon-link"
-                      href="https://priyanshum2003.github.io/APImaster/apimaster"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i className="fa fa-podcast"></i>
-                    </a>
-                  </div>
-                  <div className="using">
-                    <div className="using-name">
-                      <h6>HTML</h6>
-                    </div>
-                    <div className="using-name">
-                      <h6>JS</h6>
-                    </div>
-                    <div className="using-name">
-                      <h6>Bootstrap</h6>
-                    </div>
-                  </div>
-                </div>
-                <div className="card" data-aos="flip-down" data-aos-delay="300">
-                  <img src="./images/Picture4.jpg" alt="" />
-                  <h1>Super Mario Lite</h1>
-                  <div className="card-social-media">
-                    <a
-                      className="icon-link"
-                      href="https://github.com/PriyanshuM2003/SuperMarioLite.git"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i className="fab fa-github"></i>
-                    </a>
-                    <a
-                      className="icon-link"
-                      href="https://priyanshum2003.github.io/SuperMarioLite/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i className="fa fa-podcast"></i>
-                    </a>
-                  </div>
-                  <div className="using">
-                    <div className="using-name">
-                      <h6>HTML</h6>
-                    </div>
-                    <div className="using-name">
-                      <h6>CSS</h6>
-                    </div>
-                    <div className="using-name">
-                      <h6>JS</h6>
-                    </div>
-                  </div>
-                </div>
-              </TabContent>
-              <TabContent id="tab2" activeTab={activeTab}>
-                <div className="card" data-aos="flip-down" data-aos-delay="300">
-                  <img src="./images/Picture11.jpg" alt="" />
-                  <h1>Voting System</h1>
-                  <div className="card-social-media">
-                    <a
-                      className="icon-link"
-                      href="https://github.com/PriyanshuM2003/VotingSystem.git"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i className="fab fa-github"></i>
-                    </a>
-                  </div>
-                  <div className="using">
-                    <div className="using-name">
-                      <h6>Python</h6>
-                    </div>
-                  </div>
-                </div>
-                <div className="card" data-aos="flip-down" data-aos-delay="300">
-                  <img src="./images/Picture15.jpg" alt="" />
-                  <h1>C.V. Tracker</h1>
-                  <div className="card-social-media">
-                    <a
-                      className="icon-link"
-                      href="https://github.com/PriyanshuM2003/CoronaVirusLiveTracker.git"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i className="fab fa-github"></i>
-                    </a>
-                  </div>
-                  <div className="using">
-                    <div className="using-name">
-                      <h6>Python</h6>
-                    </div>
-                  </div>
-                </div>
-                <div className="card" data-aos="flip-down" data-aos-delay="300">
-                  <img src="./images/Picture8.jpg" alt="" />
-                  <h1>Snake Game</h1>
-                  <div className="card-social-media">
-                    <a
-                      className="icon-link"
-                      href="https://github.com/PriyanshuM2003/PythonGames.git"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i className="fab fa-github"></i>
-                    </a>
-                  </div>
-                  <div className="using">
-                    <div className="using-name">
-                      <h6>Python</h6>
-                    </div>
-                  </div>
-                </div>
-                <div className="card" data-aos="flip-down" data-aos-delay="300">
-                  <img src="./images/Picture6.jpg" alt="" />
-                  <h1>QR Code Generator</h1>
-                  <div className="card-social-media">
-                    <a
-                      className="icon-link"
-                      href="https://github.com/PriyanshuM2003/QRCodeGenerator.git"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i className="fab fa-github"></i>
-                    </a>
-                  </div>
-                  <div className="using">
-                    <div className="using-name">
-                      <h6>Python</h6>
-                    </div>
-                  </div>
-                </div>
-                <div className="card" data-aos="flip-down" data-aos-delay="300">
-                  <img src="./images/Picture7.png" alt="" />
-                  <h1>Word Cloud Generator</h1>
-                  <div className="card-social-media">
-                    <a
-                      className="icon-link"
-                      href="https://github.com/PriyanshuM2003/WordCloud.git"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i className="fab fa-github"></i>
-                    </a>
-                  </div>
-                  <div className="using">
-                    <div className="using-name">
-                      <h6>Python</h6>
-                    </div>
-                  </div>
-                </div>
-                <div className="card" data-aos="flip-down" data-aos-delay="300">
-                  <img src="./images/Picture12.jpg" alt="" />
-                  <h1>R.P.S</h1>
-                  <div className="card-social-media">
-                    <a
-                      className="icon-link"
-                      href="https://github.com/PriyanshuM2003/PythonGames.git"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i className="fab fa-github"></i>
-                    </a>
-                  </div>
-                  <div className="using">
-                    <div className="using-name">
-                      <h6>Python</h6>
-                    </div>
-                  </div>
-                </div>
-              </TabContent>
-              <TabContent id="tab3" activeTab={activeTab}>
-                {/* <div className="card" data-aos="flip-down" data-aos-delay="300">
-                                    <img src="./images/Picture16.jpg" alt="" />
-                                    <h1>E-commerce</h1>
-                                    <div className="card-social-media">
-                                        <a className='icon-link' href="/" target='_blank' rel='noopener noreferrer'>
-                                            <i className='fab fa-github'></i>
-                                        </a>
-                                        <a className='icon-link' href="/" target='_blank' rel='noopener noreferrer'>
-                                            <i className='fa fa-podcast'></i>
-                                        </a>
-                                    </div>
-                                    <div className='using'>
-                                        <div className='using-name'>
-                                            <h6>Next js</h6>
-                                        </div>
-                                        <div className='using-name'>
-                                            <h6>React js</h6>
-                                        </div>
-                                        <div className='using-name'>
-                                            <h6>Tailwind</h6>
-                                        </div>
-                                    </div>
-                                </div> */}
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-              </TabContent>
-            </div>
+            ))}
           </div>
         </div>
-      </section>
-    </>
+        <div className="TabContent">
+          {projectData[activeTab].map((project, index) => (
+            <TabContent key={index} project={project} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function TabItem({ id, title, activeTab, onClick }) {
+  return (
+    <li
+      onClick={() => onClick(id)}
+      className={activeTab === id ? "active" : ""}
+    >
+      {title}
+    </li>
+  );
+}
+
+function TabContent({ project }) {
+  return (
+    <div className="card" data-aos="flip-down" data-aos-delay="300">
+      <img src={project.imgSrc} alt="" />
+      <h1>{project.title}</h1>
+      <div className="card-social-media">
+        <a
+          className="icon-link"
+          href={project.githubUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-github"></i>
+        </a>
+        {project.liveUrl && (
+          <a
+            className="icon-link"
+            href={project.liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fa fa-podcast"></i>
+          </a>
+        )}
+      </div>
+      <div className="using">
+        {project.technologies.map((tech, index) => (
+          <div key={index} className="using-name">
+            <h6>{tech}</h6>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }
