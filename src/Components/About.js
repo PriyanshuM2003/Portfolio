@@ -5,18 +5,10 @@ function About() {
     <>
       <section className="about" id="about">
         <div className="container">
-          <div
-            className="profile-img"
-            data-aos="fade-right"
-            data-aos-delay="300"
-          >
+          <div className="profile-img">
             <img src="images/profile.jpeg" alt="" />
           </div>
-          <div
-            className="about-details"
-            data-aos="fade-left"
-            data-aos-delay="300"
-          >
+          <div className="about-details">
             <div className="about-heading">
               <h1>About</h1>
               <h6>Myself</h6>

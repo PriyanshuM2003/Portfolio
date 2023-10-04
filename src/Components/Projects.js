@@ -13,7 +13,7 @@ const projectData = {
       imgSrc: "./images/Picture2.png",
       githubUrl: "https://github.com/PriyanshuM2003/Portfolio.git",
       liveUrl: "",
-      technologies: ["React js"],
+      technologies: ["React.js"],
     },
     {
       title: "E-commerce",
@@ -95,7 +95,29 @@ const projectData = {
       technologies: ["Python"],
     },
   ],
-  tab3: [],
+  tab3: [
+    {
+      title: "Daily-Dose News",
+      imgSrc: "./images/Picture18.jpg",
+      githubUrl: "https://github.com/PriyanshuM2003/Daily-Dose-News.git",
+      liveUrl: "",
+      technologies: ["React.js", "News API"],
+    },
+    {
+      title: "PokeTab",
+      imgSrc: "./images/Picture19.png",
+      githubUrl: "https://github.com/PriyanshuM2003/PokeTab.git",
+      liveUrl: "https://priyanshum2003.github.io/PokeTab/",
+      technologies: ["React.js","Pokemon API"],
+    },
+    {
+      title: "QR Code Generator",
+      imgSrc: "./images/Picture6.png",
+      githubUrl: "https://github.com/PriyanshuM2003/QRCodeGenerator.git",
+      liveUrl: "",
+      technologies: ["Python"],
+    },
+  ],
 };
 
 export default function Projects() {
@@ -149,7 +171,7 @@ function TabItem({ id, title, activeTab, onClick }) {
 
 function TabContent({ project }) {
   return (
-    <div className="card" data-aos="flip-down" data-aos-delay="300">
+    <div className="card">
       <img src={project.imgSrc} alt="" />
       <h1>{project.title}</h1>
       <div className="card-social-media">

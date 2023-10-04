@@ -53,7 +53,6 @@
 
 /** Common */
 
-
 /** Navbar  */
 
 .top-nav {
@@ -82,7 +81,7 @@ li {
 }
 
 .nav-link {
-  font-family: 'Pattaya', sans-serif;
+  font-family: "Pattaya", sans-serif;
   font-size: 5rem;
   padding: 1rem;
   color: #eee;
@@ -161,7 +160,7 @@ li {
 
 .intro h1 {
   font-size: 20rem;
-  font-family: 'Oleo Script Swash Caps', cursive;
+  font-family: "Oleo Script Swash Caps", cursive;
   background: linear-gradient(to top, #ffe838, #fd57bf);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -220,7 +219,7 @@ li {
 }
 
 .icon-link {
-  color: #eee
+  color: #eee;
 }
 
 .fa-github:hover {
@@ -228,15 +227,45 @@ li {
 }
 
 .fa-x-twitter:hover {
-  color: #0F1419;
+  color: #0f1419;
 }
 
 .fa-instagram:hover {
   color: transparent;
-  background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(
+    30% 107%,
+    circle,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background: -o-radial-gradient(
+    30% 107%,
+    circle,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background: -webkit-radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
   background-clip: text;
   -webkit-background-clip: text;
 }
@@ -249,9 +278,7 @@ li {
   color: #b5b0b0;
 }
 
-
 /** About */
-
 
 /** Services */
 
@@ -353,7 +380,7 @@ li {
 }
 
 .ring {
-  font-family: 'Quando', serif;
+  font-family: "Quando", serif;
   display: flex;
   height: 200px;
   width: 200px;
@@ -377,7 +404,7 @@ li {
 }
 
 .ring-two {
-  font-family: 'Quando', serif;
+  font-family: "Quando", serif;
   display: flex;
   height: 200px;
   width: 200px;
@@ -385,7 +412,6 @@ li {
   position: relative;
   box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
   overflow: hidden;
-
 }
 
 .ring-two:after {
@@ -731,7 +757,7 @@ svg circle {
 
 .card h1 {
   font-size: 4rem;
-  font-family: 'Quando', serif;
+  font-family: "Quando", serif;
   background: linear-gradient(to top, #ffe838, #fd57bf);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -748,7 +774,7 @@ svg circle {
 }
 
 .card .fa-github:hover {
-  color: #1DB954;
+  color: #1db954;
 }
 
 .card .fa-github {
@@ -795,7 +821,6 @@ svg circle {
 }
 
 /** Card */
-
 
 /** Tabs  */
 
@@ -987,7 +1012,6 @@ body {
   .ring-two {
     margin: 0 auto;
   }
-
 
   .tab {
     width: auto;
@@ -1305,8 +1329,6 @@ body {
       stroke-dashoffset: calc(471px - (471px * 40) / 100);
     }
   }
-
-
 
   .tab {
     width: auto;
