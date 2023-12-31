@@ -11,7 +11,7 @@ export default function Contact() {
           </div>
           <div className="contact-details">
             <h1>Phone No.:- +91-9315061543</h1>
-            <h1>Email I'd:- priyanshumishra332@gmail.com</h1>
+            <h1>Email I'd:- mishra5priyanshu7@gmail.com</h1>
           </div>
         </div>
       </section>

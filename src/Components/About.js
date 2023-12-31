@@ -27,7 +27,7 @@ function About() {
                   <a
                     className="icon-link"
                     target="_blank"
-                    href="https://drive.google.com/file/d/1ts-krDYBVtaPZG8ex2cVQ7SrU-Vidc5W/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1ErorzOyzszjhRis8XsgktR0xlm-Evc-8/view?usp=sharing"
                     rel="noopener noreferrer"
                   >
                     <i className="fa fa-file"></i>

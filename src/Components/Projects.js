@@ -37,11 +37,11 @@ const projectData = {
       technologies: ["MERN Stack", "Bootstrap"],
     },
     {
-      title: "API Master",
-      imgSrc: "./images/Picture14.jpg",
-      githubUrl: "https://github.com/PriyanshuM2003/APImaster.git",
-      liveUrl: "https://priyanshum2003.github.io/APImaster/apimaster",
-      technologies: ["HTML", "JS", "Bootstrap"],
+      title: "LinkIt-Job Board",
+      imgSrc: "./images/Picture20.png",
+      githubUrl: "https://github.com/PriyanshuM2003/LinkIt.git",
+      liveUrl: "https://linkit-job-board.vercel.app/",
+      technologies: ["MERN Stack", "Razorpay", "MaterialUI"],
     },
     {
       title: "Super Mario Lite",
@@ -109,6 +109,13 @@ const projectData = {
       githubUrl: "https://github.com/PriyanshuM2003/PokeTab.git",
       liveUrl: "https://priyanshum2003.github.io/PokeTab/",
       technologies: ["React.js","Pokemon API"],
+    },
+    {
+      title: "API Master",
+      imgSrc: "./images/Picture14.jpg",
+      githubUrl: "https://github.com/PriyanshuM2003/APImaster.git",
+      liveUrl: "https://priyanshum2003.github.io/APImaster/apimaster",
+      technologies: ["HTML", "JS", "Bootstrap"],
     },
     {
       title: "QR Code Generator",
