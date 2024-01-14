@@ -45,7 +45,7 @@ function About() {
                 </li>
                 <li>
                   <a
-                    href="https://www.linkedin.com/in/PriyanshuM2003"
+                    href="https://www.linkedin.com/in/priyanshumishra2003"
                     className="icon-link"
                     target="_blank"
                     rel="noopener noreferrer"
