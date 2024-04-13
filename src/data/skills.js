@@ -23,7 +23,7 @@ export const skills = [
   { skillName: "Mongo DB", percentage: "80%", ringClass: "dbs-ring" },
   { skillName: "PostgreSQL", percentage: "80%", ringClass: "dbs-ring" },
   { skillName: "MySQL", percentage: "80%", ringClass: "dbs-ring" },
-  { skillName: "Prisma,", percentage: "80%", ringClass: "dbs-ring" },
+  { skillName: "Prisma", percentage: "80%", ringClass: "dbs-ring" },
   { skillName: "Supabase", percentage: "80%", ringClass: "dbs-ring" },
   { skillName: "AWS", percentage: "80%", ringClass: "dbs-ring" },
   // **************************************************************************
