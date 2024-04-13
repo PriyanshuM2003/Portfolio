@@ -1,4 +1,5 @@
 import React from "react";
+import { experiences } from "../data/experience";
 
 export default function Experience() {
   return (
@@ -11,10 +12,16 @@ export default function Experience() {
           </div>
           <div className="timeline">
             <ul>
-              <li className="date" data-date="May/23 - Jul/23">
-                <h1>ButterPaper</h1>
-                <p>Intern at ButterPaper as a Full Stack Developer.</p>
-              </li>
+              {experiences.map((experience) => (
+                <li
+                  key={experience.id}
+                  className="date"
+                  data-date={experience.date}
+                >
+                  <h1>{experience.company}</h1>
+                  <p>{experience.role}</p>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
