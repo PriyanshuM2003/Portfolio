@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Lucida Fax", sans-serif;
+  color: #eee;
+}
+
+body {
+  background: url(/public/images/sitebg.jpg) no-repeat center fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 6rem 0;
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+img {
+  width: 100%;
+}

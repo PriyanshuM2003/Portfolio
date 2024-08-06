@@ -1,0 +1,122 @@
+export const projectData = {
+  tab1: [
+    {
+      title: "Portfolio",
+      imgSrc: "./images/Picture2.png",
+      githubUrl: "https://github.com/PriyanshuM2003/Portfolio.git",
+      liveUrl: "",
+      technologies: ["React.js"],
+    },
+    {
+      title: "E-commerce",
+      imgSrc: "./images/Picture16.png",
+      githubUrl: "https://github.com/PriyanshuM2003/OtakuStore.git",
+      liveUrl: "https://otakustore.vercel.app/",
+      technologies: ["React.js", "Next.js", "Razorpay"],
+    },
+    {
+      title: "Messenger XD",
+      imgSrc: "./images/Picture3.png",
+      githubUrl: "https://github.com/PriyanshuM2003/MessengerXD-chat-app.git",
+      liveUrl: "https://messengerxd.vercel.app/",
+      technologies: ["MERN Stack", "Chakra UI"],
+    },
+    {
+      title: "airArticle",
+      imgSrc: "./images/Picture5.png",
+      githubUrl: "https://github.com/PriyanshuM2003/airArticle.git",
+      liveUrl: "https://airarticle.vercel.app/",
+      technologies: ["MERN Stack", "Bootstrap"],
+    },
+    {
+      title: "LinkIt-Job Board",
+      imgSrc: "./images/Picture20.png",
+      githubUrl: "https://github.com/PriyanshuM2003/LinkIt.git",
+      liveUrl: "https://linkit-job-board.vercel.app/",
+      technologies: ["MERN Stack", "Razorpay", "MaterialUI"],
+    },
+    {
+      title: "Super Mario Lite",
+      imgSrc: "./images/Picture4.jpg",
+      githubUrl: "https://github.com/PriyanshuM2003/SuperMarioLite.git",
+      liveUrl: "https://priyanshum2003.github.io/SuperMarioLite/",
+      technologies: ["HTML", "CSS", "JS"],
+    },
+  ],
+  // **************************************************************************************************
+  tab2: [
+    {
+      title: "Voting System",
+      imgSrc: "./images/Picture11.jpg",
+      githubUrl: "https://github.com/PriyanshuM2003/VotingSystem.git",
+      liveUrl: "",
+      technologies: ["Python"],
+    },
+    {
+      title: "C.V. Tracker",
+      imgSrc: "./images/Picture15.jpg",
+      githubUrl: "https://github.com/PriyanshuM2003/CoronaVirusLiveTracker.git",
+      liveUrl: "",
+      technologies: ["Python"],
+    },
+    {
+      title: "Weather App",
+      imgSrc: "./images/Picture17.png",
+      githubUrl: "https://github.com/PriyanshuM2003/WeatherApp.git",
+      liveUrl: "",
+      technologies: ["Python"],
+    },
+    {
+      title: "Snake Game",
+      imgSrc: "./images/Picture8.jpg",
+      githubUrl: "https://github.com/PriyanshuM2003/PythonGames.git",
+      liveUrl: "",
+      technologies: ["Python"],
+    },
+    {
+      title: "Word Cloud Generator",
+      imgSrc: "./images/Picture7.png",
+      githubUrl: "https://github.com/PriyanshuM2003/WordCloud.git",
+      liveUrl: "",
+      technologies: ["Python"],
+    },
+    {
+      title: "Rock Paper Scissors",
+      imgSrc: "./images/Picture12.png",
+      githubUrl: "https://github.com/PriyanshuM2003/PythonGames.git",
+      liveUrl: "",
+      technologies: ["Python"],
+    },
+  ],
+  // **************************************************************************************************
+  tab3: [
+    {
+      title: "Daily-Dose News",
+      imgSrc: "./images/Picture18.jpg",
+      githubUrl: "https://github.com/PriyanshuM2003/Daily-Dose-News.git",
+      liveUrl: "",
+      technologies: ["React.js", "News API"],
+    },
+    {
+      title: "PokeTab",
+      imgSrc: "./images/Picture19.png",
+      githubUrl: "https://github.com/PriyanshuM2003/PokeTab.git",
+      liveUrl: "https://priyanshum2003.github.io/PokeTab/",
+      technologies: ["React.js", "Pokemon API"],
+    },
+    {
+      title: "API Master",
+      imgSrc: "./images/Picture14.jpg",
+      githubUrl: "https://github.com/PriyanshuM2003/APImaster.git",
+      liveUrl: "https://priyanshum2003.github.io/APImaster/apimaster",
+      technologies: ["HTML", "JS", "Bootstrap"],
+    },
+    {
+      title: "QR Code Generator",
+      imgSrc: "./images/Picture6.png",
+      githubUrl: "https://github.com/PriyanshuM2003/QRCodeGenerator.git",
+      liveUrl: "",
+      technologies: ["Python"],
+    },
+  ],
+};
