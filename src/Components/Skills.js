@@ -124,39 +124,28 @@ function TabItem({ id, title, activeTab, onClick }) {
 }
 
 function TabContent({ activeTab, aniRef, aniTrig }) {
-  return (
-    <>
-      {skillTabs.map((tab) => {
-        if (tab.id === activeTab) {
-          return (
-            <>
-              <div
-                key={tab.id}
-                className="prog-skill"
-                id="prog-skill"
-                ref={aniRef}
-              >
-                {skills
-                  .filter((skill) => skill.ringClass === tab.ringClass)
-                  .map((skill, index) => (
-                    <SkillItem
-                      key={index}
-                      skillName={skill.skillName}
-                      percentage={skill.percentage}
-                      ringClass={skill.ringClass}
-                      aniTrig={aniTrig}
-                      index={index}
-                      activeTab={activeTab}
-                    />
-                  ))}
-              </div>
-            </>
-          );
-        }
-        return null;
-      })}
-    </>
-  );
+  return skillTabs.map((tab) => {
+    if (tab.id === activeTab) {
+      return (
+        <div key={tab.id} className="prog-skill" id="prog-skill" ref={aniRef}>
+          {skills
+            .filter((skill) => skill.ringClass === tab.ringClass)
+            .map((skill, index) => (
+              <SkillItem
+                key={index}
+                skillName={skill.skillName}
+                percentage={skill.percentage}
+                ringClass={skill.ringClass}
+                aniTrig={aniTrig}
+                index={index}
+                activeTab={activeTab}
+              />
+            ))}
+        </div>
+      );
+    }
+    return null;
+  });
 }
 
 export default Skills;

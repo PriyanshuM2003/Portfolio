@@ -59,7 +59,7 @@ function TabItem({ id, title, activeTab, onClick }) {
 function TabContent({ project }) {
   return (
     <div className="card">
-      <img src={project.imgSrc} alt="" />
+      <img src={project.imgSrc} alt="" width={400} height={186} />
       <h1>{project.title}</h1>
       <div className="card-social-media">
         <a
