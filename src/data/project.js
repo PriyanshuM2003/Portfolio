@@ -36,11 +36,11 @@ export const projectData = {
       technologies: ["MERN Stack", "Razorpay", "MaterialUI"],
     },
     {
-      title: "Super Mario Lite",
-      imgSrc: "./images/Picture4.jpg",
-      githubUrl: "https://github.com/PriyanshuM2003/SuperMarioLite.git",
-      liveUrl: "https://priyanshum2003.github.io/SuperMarioLite/",
-      technologies: ["HTML", "CSS", "JS"],
+      title: "Narratioverse",
+      imgSrc: "./images/Picture21.png",
+      githubUrl: "https://github.com/PriyanshuM2003/NarratioVerse.git",
+      liveUrl: "https://narratioverse.vercel.app/",
+      technologies: ["Next.js", "Stripe", "Supabase"],
     },
   ],
   // **************************************************************************************************
@@ -103,6 +103,13 @@ export const projectData = {
       githubUrl: "https://github.com/PriyanshuM2003/PokeTab.git",
       liveUrl: "https://priyanshum2003.github.io/PokeTab/",
       technologies: ["React.js", "Pokemon API"],
+    },
+    {
+      title: "Super Mario Lite",
+      imgSrc: "./images/Picture4.jpg",
+      githubUrl: "https://github.com/PriyanshuM2003/SuperMarioLite.git",
+      liveUrl: "https://priyanshum2003.github.io/SuperMarioLite/",
+      technologies: ["HTML", "CSS", "JS"],
     },
     {
       title: "API Master",

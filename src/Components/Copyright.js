@@ -11,7 +11,7 @@ export default function Copyright() {
         <div className="up" id="up" onClick={animate}>
           <i className="fa fa-chevron-up"></i>
         </div>
-        <p>&copy; 2024 Priyanshu Mishra</p>
+        <p>&copy; 2025 Priyanshu Mishra</p>
       </footer>
     </>
   );
