@@ -2,7 +2,7 @@ export const socialMediaLinks = [
     {
       id: 1,
       icon: "fa fa-file",
-      href: "https://drive.google.com/file/d/1EwdT0r6YW_XK4O_syFOn9SyOpuhSzXR6/view?usp=sharing",
+      href: "https://drive.google.com/file/d/1ErorzOyzszjhRis8XsgktR0xlm-Evc-8/view?usp=sharing",
       target: "_blank",
       rel: "noopener noreferrer"
     },

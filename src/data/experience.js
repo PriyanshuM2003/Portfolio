@@ -3,7 +3,7 @@ export const experiences = [
     id: 1,
     date: "Dec/24 - Present",
     company: "Stackkaroo Private Limited",
-    role: "Full-time Full Stack Developer.",
+    role: "Full-time Senior Full Stack Developer.",
   },
   {
     id: 2,
